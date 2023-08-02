@@ -1,5 +1,5 @@
+import Settings from '../Settings/Settings';
 import classes from './NavButtons.module.scss'
-import { RiSettingsFill } from 'react-icons/ri'
 
 const NavButtons = () => {
   return (
@@ -9,7 +9,7 @@ const NavButtons = () => {
       <a>Serviços<div/></a>
       <a>Projetos<div/></a>
       <a>Contato</a>
-      <RiSettingsFill />
+      <Settings />
     </div>
   );
 }

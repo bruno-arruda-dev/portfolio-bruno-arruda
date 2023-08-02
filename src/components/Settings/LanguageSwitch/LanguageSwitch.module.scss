@@ -1,0 +1,17 @@
+@import '../../../styles/Global.module.scss';
+
+.languageSwitch {
+    cursor: pointer;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 20px;
+    @extend .img-default-cfg; 
+}
+
+.brazil_flag {
+    background-image: url(../../../../src/assets/helpers/brazil-flag.png);
+}
+
+.eua_flag {
+    background-image: url(../../../../src/assets/helpers/united-states-flag.png);
+}

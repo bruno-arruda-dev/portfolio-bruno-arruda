@@ -5,6 +5,7 @@
 .navButtons {
     display: flex;
     font-size: 1.5rem;
+    padding-right: 20px;
 
     a {
         display: flex;
@@ -12,14 +13,14 @@
         justify-content: center;
         cursor: pointer;
         margin-right: 20px;
-        transition: all .2s ease-in-out;
+        transition: all .5s ease-in-out;
 
         div {
             margin-left: 15px;
             width: 3px;
             height: 3px;
             background-color: $detail-text;
-            transition: all .8s ease-in-out;
+            transition: all 0.3s ease-in-out;
             border-radius: 50%;
         }
 
