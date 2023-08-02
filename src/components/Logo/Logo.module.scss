@@ -1,0 +1,10 @@
+@import '../../styles/Global.module.scss';
+
+.logo {
+    font-size: 2rem;
+    
+    span {
+        font-weight: bold;
+        color: $detail-text;
+    }
+}

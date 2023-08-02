@@ -1,0 +1,21 @@
+@import './styles/Global.module.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: $light;
+}
+
+body {
+    background-color: #071b37;
+}
+
+a {
+    text-decoration: none;
+}
+
+.App {
+    font-family: 'Roboto', sans-serif;
+
+}
