@@ -1,0 +1,40 @@
+@import '../../styles/Global.module.scss';
+
+.navButtons_light {
+    display: flex;
+    font-size: 1.5rem;
+    padding-right: 20px;
+
+    a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        margin-right: 15px;
+        transition: all .5s ease-in-out;
+
+        div {
+            margin-left: 15px;
+            width: 3px;
+            height: 3px;
+            background-color: $detail-light-text;
+            transition: all 0.3s ease-in-out;
+            border-radius: 50%;
+        }
+
+        &:nth-child(5) {
+            margin-right: 35px;
+        }
+
+        &:hover {
+            color: $detail-light-text;            
+        }
+        
+        &:hover div {
+            box-shadow: 0 0 5px $bg-light;
+            width: 3px;
+            height: 25px;
+            border-radius: 50px;
+        }
+    }
+}

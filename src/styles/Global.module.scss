@@ -1,12 +1,30 @@
-// Colors
-$light: white;
+// Light colors
+$bg-light: #e1e1e1;
+$main-text-light: #1f56a3;
+$detail-light-text: #1900ff;
 
-// Texts
-$detail-text: #4caeff;
+// Dark colors
+$bg-dark: #071b37;
+$main-text-dark: #fff;
+$detail-dark-text: #4caeff;
+
+// Opacity colors
+$light-opacity: #e1e1e178;
+$dark-opacity: #071b3778;
+$detail-opacity: #1900ff78;
+
+// Radius
+$main-radius: 5px;
 
 // Images
 .img-default-cfg {
     background-position: center;
     background-size: 80%;
+    background-repeat: no-repeat;
+}
+
+.img-switch-theme-cfg {
+    background-position: center;
+    background-size: 110%;
     background-repeat: no-repeat;
 }
