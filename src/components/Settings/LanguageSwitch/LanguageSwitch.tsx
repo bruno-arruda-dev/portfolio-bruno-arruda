@@ -6,7 +6,10 @@ const LanguageSwitch = () => {
   const {handleChangeLanguage, language} = useContext(ConfigContext);
 
   return (
-    <div className={`${classes.languageSwitch} ${classes[language]}`} onClick={handleChangeLanguage} />
+    <div className={`${classes.languageSwitch}`} onClick={handleChangeLanguage}>
+      <div className={`${classes.brazil} ${classes["brazilFlag_" + language]}`} />
+      <div className={`${classes.eua} ${classes["euaFlag_" + language]}`} />
+    </div>
   );
 }
 
