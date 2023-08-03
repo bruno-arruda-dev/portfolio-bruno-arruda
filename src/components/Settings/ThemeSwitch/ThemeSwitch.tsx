@@ -1,17 +1,10 @@
-import {useState} from 'react'
+import {useContext} from 'react'
+import { ConfigContext } from '../../../context/ConfigContext'
 import classes from './ThemeSwitch.module.scss'
 import {BsMoonStarsFill, BsCloudSunFill} from 'react-icons/bs'
 
 const ThemeSwitch = () => {
-  const [theme, setTheme] = useState('dark')
-
-  const handleChangeTheme = () => {
-    if (theme === 'dark') {
-      setTheme('light')
-    } else {
-      setTheme('dark')
-    }
-  }
+  const {handleChangeTheme, theme} = useContext(ConfigContext)
 
   return (
     <div className={classes.themeSwitch} onClick={handleChangeTheme}>
