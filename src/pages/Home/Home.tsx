@@ -2,6 +2,7 @@ import { useContext } from 'react'
 import classes from './Home.module.scss'
 import { allLanguages } from '../../locales/languages'
 import { ConfigContext } from '../../context/ConfigContext';
+import Hire from '../../components/HireButtons/Hire';
 
 const Home = () => {
   const { language } = useContext(ConfigContext)
@@ -15,16 +16,11 @@ const Home = () => {
           <h2>{l.hello}</h2>
           <h3>Frontend Developer</h3>
           <p>{l.personalDescription}</p>
-          <p>{l.personalQuestion}</p>
+          <p className={classes.question}>{l.personalQuestion}</p>
           <p>{l.personalAnswer}</p>
-          <div>
-            <a>
-              {l.hireMe}
-            </a>
-            <a>
-              {l.letsTalk}
-            </a>
-          </div>
+
+          <Hire />
+
         </div>
       </div>
 

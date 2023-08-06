@@ -1,0 +1,63 @@
+@import '../../styles/Global.module.scss';
+
+.hireContainer {
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    a {
+        margin: 1rem;
+        padding: 10px 0;
+        width: 200px;
+        border-radius: $main-radius;
+        text-align: center;
+        cursor: pointer;
+        position: relative;
+        border: 2px solid $detail-dark-text;
+        border-radius: $main-radius;
+
+        p {
+            position: relative;
+            z-index: 9999;
+        }
+    }
+    
+    .hire {
+        background-color: $detail-dark-text;
+        
+        &:after {
+            transition: all .3s ease;
+            position: absolute;
+            left: 0;
+            top: 0;
+            content: '';
+            height: 100%;
+            width: 0px;
+            background-color: $bg-dark;
+            border-radius: $main-radius;
+        }
+
+        &:hover::after {
+            width: 100%;
+        }
+    }
+
+    .talk {
+
+        &:after {
+            transition: all .3s ease;
+            position: absolute;
+            left: 0;
+            top: 0;
+            content: '';
+            height: 100%;
+            width: 0px;
+            background-color: $detail-dark-text;
+        }
+
+        &:hover::after {
+            width: 100%;
+        }
+    }
+}
