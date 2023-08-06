@@ -5,6 +5,12 @@ export const allLanguages: Record<string, { [key: string]: string }> = {
       services: 'Serviços',
       projects: 'Projetos',
       contact: 'Contato',
+      hello: 'Olá, Eu sou Bruno Arruda',
+      personalDescription: 'Aos 34 anos vivo em Goiânia-GO, apaixonado por desenvolver experiências web incríveis, área a qual estudo com muita disciplina e dedicação.',
+      personalQuestion: 'É possível programar ótimas mudanças na vida das pessoas?',
+      personalAnswer: 'Acredito que sim, além de também achar programação algo muito divertido!',
+      hireMe: 'Me Contrate',
+      letsTalk: 'Vamos Conversar',
     },
     en: {
       home: 'Home',
@@ -12,6 +18,11 @@ export const allLanguages: Record<string, { [key: string]: string }> = {
       services: 'Services',
       projects: 'Projects',
       contact: 'Contact',
+      hello: "Hello, I'm Bruno Arruda",
+      personalDescription: 'At 34 years old, I live in Goiânia-GO, passionate about developing incredible web experiences, an area that I study with a lot of discipline and dedication.',
+      personalQuestion: 'Is it possible to program great changes in people’s lives?',
+      personalAnswer: 'I believe so, and I also find programming very fun!',
+      hireMe: 'Hire Me',
+      letsTalk: 'Lets Talk',
     },
   };
-  

@@ -1,0 +1,39 @@
+@import '../../styles/Global.module.scss';
+
+.home {
+    width: 100%;
+    min-height: calc(100vh - 70px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .presentation {
+        width: 50%;
+        min-height: calc(100vh - 70px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 10%;
+
+
+        .presentationContainer {
+            width: 100%;
+    
+            h2 {
+                font-weight: bold;
+            }
+            
+            h3 {
+                color: $detail-dark-text;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+
+    .imageContainer {
+        width: 50%;
+        min-height: calc(100vh - 70px);
+        background-image: url('../../assets/helpers/developer.png');
+        @extend .img-presentation;
+    }
+}

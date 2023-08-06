@@ -1,12 +1,12 @@
-// Light colors
-$bg-light: #e1e1e1;
-$main-text-light: #1f56a3;
-$detail-light-text: #1900ff;
-
 // Dark colors
 $bg-dark: #071b37;
 $main-text-dark: #fff;
 $detail-dark-text: #4caeff;
+
+// Light colors
+$bg-light: #e1e1e1;
+$main-text-light: #1f56a3;
+$detail-light-text: $detail-dark-text; // Same as $detail-dark-text
 
 // Opacity colors
 $light-opacity: #e1e1e178;
@@ -23,8 +23,14 @@ $main-radius: 5px;
     background-repeat: no-repeat;
 }
 
+
 .img-switch-theme-cfg {
     background-position: center;
     background-size: 110%;
+    background-repeat: no-repeat;
+}
+.img-presentation {
+    background-position: center;
+    background-size: 50%;
     background-repeat: no-repeat;
 }
