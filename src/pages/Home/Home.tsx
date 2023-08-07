@@ -17,7 +17,7 @@ const Home = () => {
           <h3>Frontend Developer</h3>
           <p>{l.personalDescription}</p>
           <p className={classes.question}>{l.personalQuestion}</p>
-          <p>{l.personalAnswer}</p>
+          <p className={classes.answer}>{l.personalAnswer}</p>
 
           <Hire />
 

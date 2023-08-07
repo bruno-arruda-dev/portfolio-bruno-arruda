@@ -5,8 +5,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
-    a {
+    
+    .hire {
         margin: 1rem;
         padding: 10px 0;
         width: 200px;
@@ -16,18 +16,15 @@
         position: relative;
         border: 2px solid $detail-dark-text;
         border-radius: $main-radius;
+        background-color: $detail-dark-text;
 
         p {
             position: relative;
             z-index: 9999;
         }
-    }
-    
-    .hire {
-        background-color: $detail-dark-text;
-        
+
         &:after {
-            transition: all .3s ease;
+            transition: all .2s ease-out;
             position: absolute;
             left: 0;
             top: 0;
@@ -37,16 +34,28 @@
             background-color: $bg-dark;
             border-radius: $main-radius;
         }
-
+        
         &:hover::after {
             width: 100%;
         }
     }
-
-    .talk {
-
+    
+    .social {
+        margin-right: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        height: 43px;
+        width: 43px;
+        border-radius: 50%;
+        position: relative;
+        overflow: hidden;
+        border: 2px solid $detail-dark-text;
+        
+        
         &:after {
-            transition: all .3s ease;
+            transition: all .2s ease-out;
             position: absolute;
             left: 0;
             top: 0;
@@ -54,10 +63,16 @@
             height: 100%;
             width: 0px;
             background-color: $detail-dark-text;
+            border-radius: 50%;
         }
-
+        
         &:hover::after {
             width: 100%;
+        }
+        
+        svg {
+            position: absolute;
+            z-index: 9999;
         }
     }
 }

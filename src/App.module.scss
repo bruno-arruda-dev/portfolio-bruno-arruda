@@ -6,8 +6,10 @@
     box-sizing: border-box;
 }
 
-a {
+a,
+a:visited {
     text-decoration: none;
+    color: $main-text-dark;
 }
 
 .App_dark {
