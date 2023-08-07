@@ -12,7 +12,6 @@ const NavButtons = () => {
     <div className={`${DarkClasses['navButtons_' + theme]} ${LightClasses['navButtons_' + theme]}`}>
       <a>{`${l.home}`}<div/></a>
       <a>{`${l.about}`}<div/></a>
-      <a>{`${l.services}`}<div/></a>
       <a>{`${l.projects}`}<div/></a>
       <a>{`${l.contact}`}</a>
       <Settings />
