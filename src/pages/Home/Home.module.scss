@@ -1,6 +1,55 @@
 @import '../../styles/Global.module.scss';
 
-.home {
+//TEMA DARK
+.home_dark {
+    width: 100%;
+    min-height: calc(100vh - 70px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .presentation {
+        width: 50%;
+        min-height: calc(100vh - 70px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 30px;
+
+        .presentationContainer {
+            width: 100%;
+    
+            h2 {
+                font-weight: bold;
+                font-size: 3rem;
+            }
+            
+            h3 {
+                color: $detail-dark-text;
+                margin-bottom: 1rem;
+                font-size: 2rem;
+            }
+
+            p.question {
+                margin-top: 1rem;
+            }
+
+            p.answer {
+                margin-bottom: 1rem;
+            }
+        }
+    }
+
+    .imageContainer {
+        width: 50%;
+        min-height: calc(100vh - 70px);
+        background-image: url('../../assets/helpers/developer.png');
+        @extend .img-presentation;
+    }
+}
+
+// TEMA LIGHT
+.home_light {
     width: 100%;
     min-height: calc(100vh - 70px);
     display: flex;

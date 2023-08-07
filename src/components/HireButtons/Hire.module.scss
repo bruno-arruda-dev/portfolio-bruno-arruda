@@ -1,6 +1,7 @@
 @import '../../styles/Global.module.scss';
 
-.hireContainer {
+// TEMA DARK
+.hireContainer_dark {
     width: auto;
     display: flex;
     align-items: center;
@@ -63,6 +64,93 @@
             height: 100%;
             width: 0px;
             background-color: $detail-dark-text;
+            border-radius: 50%;
+        }
+        
+        &:hover::after {
+            width: 100%;
+        }
+        
+        svg {
+            position: absolute;
+            z-index: 9999;
+        }
+    }
+}
+
+// TEMA LIGHT
+.hireContainer_light {
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    .hire {
+        margin: 1rem;
+        padding: 10px 0;
+        width: 200px;
+        border-radius: $main-radius;
+        text-align: center;
+        cursor: pointer;
+        position: relative;
+        color: $main-text-light;
+        border: 2px solid $main-text-light;
+        border-radius: $main-radius;
+
+        &:hover {
+            color: $main-text-dark;
+        }
+
+        p {
+            position: relative;
+            z-index: 9999;
+        }
+
+        &:after {
+            transition: all .2s ease-out;
+            position: absolute;
+            left: 0;
+            top: 0;
+            content: '';
+            height: 100%;
+            width: 0px;
+            background-color: $main-text-light;
+        }
+        
+        &:hover::after {
+            width: 100%;
+        }
+    }
+    
+    .social {
+        margin-right: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        height: 43px;
+        width: 43px;
+        border-radius: 50%;
+        position: relative;
+        overflow: hidden;
+        color: $main-text-dark;
+        border: 2px solid $main-text-light;
+        background-color: $main-text-light;
+
+        &:hover {
+            color: $main-text-light;
+        }
+        
+        
+        &:after {
+            transition: all .2s ease-out;
+            position: absolute;
+            left: 0;
+            top: 0;
+            content: '';
+            height: 100%;
+            width: 0px;
+            background-color: $bg-light;
             border-radius: 50%;
         }
         

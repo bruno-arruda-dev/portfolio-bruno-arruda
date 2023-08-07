@@ -5,11 +5,11 @@ import { ConfigContext } from '../../context/ConfigContext';
 import Hire from '../../components/HireButtons/Hire';
 
 const Home = () => {
-  const { language } = useContext(ConfigContext)
+  const { language, theme } = useContext(ConfigContext)
   const l = allLanguages[language];
 
   return (
-    <div className={classes.home}>
+    <div className={`${classes['home_' + theme]}`}>
 
       <div className={classes.presentation}>
         <div className={classes.presentationContainer}>

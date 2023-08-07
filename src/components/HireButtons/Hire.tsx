@@ -6,11 +6,11 @@ import {BsWhatsapp} from 'react-icons/bs';
 import {FiLinkedin, FiGithub} from 'react-icons/fi';
 
 const Hire = () => {
-    const {language} = useContext(ConfigContext)
+    const {language, theme} = useContext(ConfigContext)
     const l = allLanguages[language]
     const link = allLanguages.links
     return (
-        <div className={classes.hireContainer}>
+        <div className={`${classes['hireContainer_' + theme]}`}>
             <a className={classes.hire} href={l.whatsappHireLink} target='_blank' rel='noopener noreferer'>
                 <p>{l.hireMe}</p>
             </a>

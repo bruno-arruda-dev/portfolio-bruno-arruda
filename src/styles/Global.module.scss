@@ -2,11 +2,13 @@
 $bg-dark: #071b37;
 $main-text-dark: #fff;
 $detail-dark-text: #4caeff;
+$shadow-dark: 1px 1px 1px #e1e1e1;
 
 // Light colors
 $bg-light: #e1e1e1;
 $main-text-light: #1f56a3;
 $detail-light-text: $detail-dark-text; // Same as $detail-dark-text
+$shadow-light: 1px 1px 5px #071b37;
 
 // Opacity colors
 $light-opacity: #e1e1e178;
