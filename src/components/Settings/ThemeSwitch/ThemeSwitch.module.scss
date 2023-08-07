@@ -22,7 +22,7 @@
         height: 20px;
         position: absolute;
         left: -5%;
-        background-image: url('../../../assets/helpers/moon.png');
+        background-image: url('../../../assets/images/moon.png');
         @extend .img-switch-theme-cfg;
         transform: translateX(100) rotate(180);
         transition: all 0.5s ease-in-out 0.05s;
@@ -33,7 +33,7 @@
         height: 20px;
         position: absolute;
         left: -5%;
-        background-image: url('../../../assets/helpers/sun.png');
+        background-image: url('../../../assets/images/sun.png');
         @extend .img-switch-theme-cfg;
         transform: translateX(100) rotate(180);
         transition: all 0.5s ease-in-out;
