@@ -1,5 +1,6 @@
 @import '../../../styles/Global.module.scss';
 
+// TEMA DARK
 .themeSwitch_dark {
     display: flex;
     align-items: center;
@@ -18,29 +19,34 @@
     }
 
     .moon {
-        width: 20px;
-        height: 20px;
+        background-color: red;
+        border-radius: 50px;
+        width: 25px;
+        height: 25px;
         position: absolute;
         left: -5%;
-        background-image: url('../../../assets/images/moon.png');
+        background-image: url('../../../assets/moon.png');
         @extend .img-switch-theme-cfg;
         transform: translateX(100) rotate(180);
-        transition: all 0.5s ease-in-out 0.05s;
+        transition: all .2s ease-in-out;
     }
     
     .sun {
-        width: 20px;
-        height: 20px;
+        background-color: red;
+        border-radius: 50px;
+        width: 25px;
+        height: 25px;
         position: absolute;
         left: -5%;
-        background-image: url('../../../assets/images/sun.png');
+        background-image: url('../../../assets/sun.png');
         @extend .img-switch-theme-cfg;
         transform: translateX(100) rotate(180);
-        transition: all 0.5s ease-in-out;
+        transition: all .2s ease-in-out;
         opacity: 0;
     }
 }
 
+// TEMA LIGHT
 .themeSwitch_light {
     display: flex;
     align-items: center;
@@ -59,25 +65,29 @@
     }
 
     .moon {
-        width: 20px;
-        height: 20px;
+        background-color: red;
+        border-radius: 50px;
+        width: 25px;
+        height: 25px;
         position: absolute;
-        left: -5%;
-        background-image: url('../../../assets/helpers/moon.png');
+        right: -5%;
+        background-image: url('../../../assets/moon.png');
         @extend .img-switch-theme-cfg;
-        transform: translateX(100%) rotate(180deg);
-        transition: all 0.5s ease-in-out;
+        transform: translateX(100) rotate(180);
+        transition: all .2s ease-in-out;
         opacity: 0;
     }
     
     .sun {
-        width: 20px;
-        height: 20px;
+        background-color: red;
+        border-radius: 50px;
+        width: 25px;
+        height: 25px;
         position: absolute;
-        left: -5%;
-        background-image: url('../../../assets/helpers/sun.png');
+        right: -5%;
+        background-image: url('../../../assets/sun.png');
         @extend .img-switch-theme-cfg;
-        transform: translateX(100%) rotate(180deg);
-        transition: all 0.5s ease-in-out .05s;
+        transform: translateX(100) rotate(180);
+        transition: all .2s ease-in-out;
     }
 }
