@@ -1,0 +1,16 @@
+@import '../../styles/Global.module.scss';
+
+// TEMA DARK
+.projects_dark {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  background-color: $bg-dark;
+  width: 100%;
+  height: calc(100vh - 70px);
+}
+
+// TEMA DARK
+.projects_light {
+  background-color: $bg-light;
+}

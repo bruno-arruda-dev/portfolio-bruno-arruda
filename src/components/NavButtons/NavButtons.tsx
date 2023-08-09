@@ -1,4 +1,5 @@
 import {useContext} from 'react'
+import { Link } from 'react-router-dom'
 import Settings from '../Settings/Settings';
 import DarkClasses from './DarkNavButtons.module.scss'
 import LightClasses from './LightNavButtons.module.scss'
@@ -10,10 +11,10 @@ const NavButtons = () => {
   const l = allLanguages[language];
   return (
     <div className={`${DarkClasses['navButtons_' + theme]} ${LightClasses['navButtons_' + theme]}`}>
-      <a>{`${l.home}`}<div/></a>
-      <a>{`${l.about}`}<div/></a>
-      <a>{`${l.projects}`}<div/></a>
-      <a>{`${l.contact}`}</a>
+      <Link to='/'>{`${l.home}`}<div/></Link>
+      <Link to='/'>{`${l.about}`}<div/></Link>
+      <Link to='/projects'>{`${l.projects}`}<div/></Link>
+      <Link to='/'>{`${l.contact}`}</Link>
       <Settings />
     </div>
   );

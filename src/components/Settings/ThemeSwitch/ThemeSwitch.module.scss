@@ -10,7 +10,7 @@
     width: 80%;
     height: 15px;
     background-color: $bg-light;
-    position:relative;
+    position: relative;
     border-radius: 50px;
 
     .themeSwitch_container {
@@ -23,11 +23,11 @@
         width: 25px;
         height: 25px;
         position: absolute;
-        left: -5%;
-        background-image: url('../../../assets/moon.png');
+        left: 0px;
+        background-image: url('../../../assets/images/moon.png');
         @extend .img-switch-theme-cfg;
-        transform: translateX(100) rotate(180);
-        transition: all .2s ease-in-out;
+        transform: translateX(-20%);
+        transition: all .1s ease-out;
     }
     
     .sun {
@@ -35,11 +35,11 @@
         width: 25px;
         height: 25px;
         position: absolute;
-        left: -5%;
-        background-image: url('../../../assets/sun.png');
+        left: 0px;
+        background-image: url('../../../assets/images/sun.png');
         @extend .img-switch-theme-cfg;
-        transform: translateX(100) rotate(180);
-        transition: all .2s ease-in-out;
+        transform: translateX(-20%);
+        transition: all .1s ease-out;
         opacity: 0;
     }
 }
@@ -67,11 +67,11 @@
         width: 25px;
         height: 25px;
         position: absolute;
-        right: -5%;
-        background-image: url('../../../assets/moon.png');
+        right: 0px;
+        background-image: url('../../../assets/images/moon.png');
         @extend .img-switch-theme-cfg;
-        transform: translateX(100) rotate(180);
-        transition: all .2s ease-in-out;
+        transform: translateX(20%);
+        transition: all .1s ease-out;
         opacity: 0;
     }
     
@@ -80,10 +80,10 @@
         width: 25px;
         height: 25px;
         position: absolute;
-        right: -5%;
-        background-image: url('../../../assets/sun.png');
+        right: 0px;
+        background-image: url('../../../assets/images/sun.png');
         @extend .img-switch-theme-cfg;
-        transform: translateX(100) rotate(180);
-        transition: all .2s ease-in-out;
+        transform: translateX(20%);
+        transition: all .1s ease-out;
     }
 }
