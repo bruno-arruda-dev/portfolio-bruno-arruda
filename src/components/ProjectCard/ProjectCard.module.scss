@@ -1,9 +1,9 @@
 @import '../../styles/Global.module.scss';
 
-.allProjects {
+.ProjectCard {
     cursor: pointer;
     margin-bottom: 20px;
-    width: 400px;
+    width: $ProjectCard-width;
     height: 400px;
     background-color: $bg-light;
     color: $main-text-light;

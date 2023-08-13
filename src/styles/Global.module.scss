@@ -18,8 +18,18 @@ $detail-opacity: #1900ff78;
 // Radius
 $main-radius: 5px;
 
-// navbar height, AllProjects and SelectedProject top position
+// Navbar height, 
 $default-space: 70px;
+
+// AllProjects width, 
+$ProjectCard-width: 400px;
+
+// CardProject width and padding
+$allProjects-padding: 10px;
+$allProjects-width: calc($ProjectCard-width + $allProjects-padding + $allProjects-padding);
+
+//SelectedProject width
+$selectedProject-width: calc(100% - $allProjects-width);
 
 // Images
 .img-default-cfg {

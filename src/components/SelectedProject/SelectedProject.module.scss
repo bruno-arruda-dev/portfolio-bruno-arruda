@@ -1,8 +1,8 @@
 @import '../../styles/Global.module.scss';
 
 .selectedProject {
-    padding-right: calc(10px + 400px);
-    width: 100%;
+    padding-right: calc($allProjects-padding + $allProjects-width);
+    width: $selectedProject-width;
     height: calc(100vh - $default-space);
     position: fixed;
     top: $default-space;

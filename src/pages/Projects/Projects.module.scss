@@ -10,15 +10,16 @@
   position: relative;
 
   .allProjects {
-    padding-right: 10px;
+    padding: $allProjects-padding;
     position: absolute;
     right: 0;
-    width: 100%;
+    width: $allProjects-width;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     justify-content: space-around;
-    z-index: 1;
+    z-index: 3;
   }
 }
 

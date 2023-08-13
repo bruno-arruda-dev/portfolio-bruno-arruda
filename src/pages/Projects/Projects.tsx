@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import classes from './Projects.module.scss';
 import { projects } from '../../assets/helpers/projects';
 import SelectedProject from '../../components/SelectedProject/SelectedProject';
-import AllProjects from '../../components/AllProjects/AllProjects';
+import ProjectCard from '../../components/ProjectCard/AllProjects';
 
 const Projects = () => {
   const [name, setName] = useState('');
@@ -51,7 +51,7 @@ const Projects = () => {
 
       <div className={classes.allProjects}>
         {projects.map((project, index) => (
-          <AllProjects
+          <ProjectCard
             key={index}
             name={project.name}
             description={project.description}
