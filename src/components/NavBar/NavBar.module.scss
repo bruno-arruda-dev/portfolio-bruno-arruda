@@ -1,9 +1,13 @@
 @import '../../styles/Global.module.scss';
 
 .navBar {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 1rem;
-    height: 70px;
+    height: $default-space;
+    position: fixed;
+    z-index: 4;
+    background-color: $bg-dark;
 }

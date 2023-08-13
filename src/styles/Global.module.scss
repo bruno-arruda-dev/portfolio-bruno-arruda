@@ -18,13 +18,15 @@ $detail-opacity: #1900ff78;
 // Radius
 $main-radius: 5px;
 
+// navbar height, AllProjects and SelectedProject top position
+$default-space: 70px;
+
 // Images
 .img-default-cfg {
     background-position: center;
     background-size: 100%;
     background-repeat: no-repeat;
 }
-
 
 .img-switch-theme-cfg {
     background-position: center;

@@ -9,6 +9,7 @@
     top: 6px;
     right: 15px;
     width: 50px;
+    z-index: 3;
     
     .settings_up {
         clip-path: polygon(0 0, 100% 0, 100% 40%, 0 40%); /* recorta a metade de cima do ícone */

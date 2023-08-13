@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #071b37;
+}
+
 a,
 a:visited {
     text-decoration: none;
@@ -16,10 +20,12 @@ a:visited {
     font-family: 'Roboto', sans-serif;
     background-color: $bg-dark;
     color: $main-text-dark;
+    position: relative;
 }
 
 .App_light {
     font-family: 'Roboto', sans-serif;
     background-color: $bg-light;
     color: $main-text-light;
+    position: relative;
 }

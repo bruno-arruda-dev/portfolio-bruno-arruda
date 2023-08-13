@@ -1,2 +1,33 @@
 @import '../../styles/Global.module.scss';
 
+.allProjects {
+    cursor: pointer;
+    margin-bottom: 20px;
+    width: 400px;
+    height: 400px;
+    background-color: $bg-light;
+    color: $main-text-light;
+    text-align: center;
+    border-radius: $main-radius;
+    box-shadow: $shadow-dark;
+    position: relative;
+    top: $default-space;
+
+    .imageContainer {
+        width: 100%;
+        height: 60%;
+        background-size: cover;
+        background-position: top;
+        background-repeat: no-repeat;
+        border-radius: $main-radius;
+    }
+
+    h3 {
+        margin: 10px 0;
+    }
+
+    p {
+        text-align: left;
+        text-indent: 10px;
+    }
+}

@@ -1,2 +1,10 @@
 @import '../../styles/Global.module.scss';
 
+.selectedProject {
+    padding-right: calc(10px + 400px);
+    width: 100%;
+    height: calc(100vh - $default-space);
+    position: fixed;
+    top: $default-space;
+    z-index: 2;
+}

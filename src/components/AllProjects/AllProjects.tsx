@@ -1,4 +1,5 @@
 import { IProject } from '../../types/Project';
+import CardFooter from '../CardFooter/CardFooter';
 import classes from './AllProjects.module.scss';
 
 const AllProjects = (props: Partial<IProject>) => {
@@ -12,7 +13,10 @@ const AllProjects = (props: Partial<IProject>) => {
 
   return (
     <div className={classes.allProjects} onClick={handleClick}>
-      {name} - {description} - {github} - {homepage} - {image} - {stacks}
+      <div className={classes.imageContainer} style={{ backgroundImage: `url(${image})` }} />
+      <h3>{name}</h3>
+      <p>{description}</p>
+      <CardFooter github={github} homepage={homepage} stacks={stacks} />
     </div>
   );
 }
