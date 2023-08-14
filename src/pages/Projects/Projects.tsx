@@ -24,10 +24,7 @@ const Projects = () => {
     }
   }, []);
 
-  const handleUpdateSelectedProject = (selectedName: string) => {
-
-    console.log(`Projeto selecionado ${selectedName}`)
-    
+  const handleUpdateSelectedProject = (selectedName: string) => {    
     const selectedProject = projects.find(project => project.name === selectedName);
       setName(selectedProject?.name || '');
       setDescription(selectedProject?.description || '');
