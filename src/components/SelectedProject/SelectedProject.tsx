@@ -8,7 +8,7 @@ const SelectedProject = ({ name, description, github, homepage, image, stacks }:
       <h3>{name}</h3>
       <div className={classes.backgroundImage} style={{ backgroundImage: `url(${image})` }}/>
       <p>{description}</p>
-      <MainProjectFooter />
+      <MainProjectFooter stacks={stacks}/>
       {github} - {homepage} - {image} - {stacks}
     </div>
   );

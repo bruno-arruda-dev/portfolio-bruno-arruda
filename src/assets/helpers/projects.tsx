@@ -7,7 +7,7 @@ export const projects: IProject[] = [
     github: 'https://github.com/bruno-arruda-dev/loja-de-oculos',
     homepage: 'https://oculos-chi.vercel.app',
     image: './images/projects/otica.jpeg',
-    stacks: ['react', 'javascript']
+    stacks: ['react', 'javascript', 'sass', 'typescript', 'mysql', 'html', 'css', 'node', 'next']
   },
   {
     name: 'Sorveteria',
